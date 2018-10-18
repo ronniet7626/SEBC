@@ -56,6 +56,19 @@ Hive Metastore Server
 HiveServer2
 WebHcat Server
 
+
+
+
 What steps must be completed before integrating Cloudera Manager with Kerberos?
 =================================================================================
+
+Go to Administration -> Security, there is Security inspector which should be run before Kerberos setup. Also, at first pages of Kerberos wizard there is a number of steps that require confirmation that they have been completed, before the wizard will run.
+
+Install KDC (MIT)
+Create Kerberos Principal for the Cloudera Manager Server
+Ensure KDC allows renewable tickets
+Java security extention library installed
+
+
+
 
